@@ -1,0 +1,415 @@
+
+:root{
+    --a:0;
+}
+
+*{
+    margin: 0;
+    padding: 0;;
+}
+
+
+body{
+    background-color: black;
+    color: white;
+
+}
+
+
+
+.left{
+    width :25vw;
+    padding: 0px;
+   
+}
+.right{
+    width:75vw;
+}
+
+
+
+.invert{
+    filter: invert(1);
+}
+
+
+
+li img{
+    
+
+  
+    min-width: 25px;  
+    
+}
+
+li{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size:18px;
+}
+
+
+.heading {
+    display: flex;
+    gap: 14px;
+
+    width: 14px;
+ 
+    padding-top:15px;
+}
+
+.heading img{
+     min-width: 25px;
+}
+
+.heading{
+    font-size: 11px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.heading {
+    display: flex;
+    gap: 14px;
+    width: 100%;
+
+    font-weight: bold;
+    align-items: center;
+    font-size: 13px;
+}
+
+.heading img {
+    width: 30px;
+}
+
+.home ul li {
+    display: flex;
+    gap: 15px;
+    width: 14px;
+    list-style: none;
+    padding-top: 16px;
+    font-weight: bold;
+}
+.footer{
+    display: flex;
+    font-size: 10px;
+    gap: 13px;
+    position: absolute;
+    bottom:0;
+    padding: 10px;
+}
+
+.footer a{
+    color:grey;
+
+}
+.library{
+    min-height: 70vh;
+    position: relative;
+}
+
+.vvc{
+    color: gray;
+}
+
+.vvc:hover{
+    color: white;
+   
+}
+.vvc{
+     transition: 0.5s ease-out;
+
+}
+h3{
+    color: gray;
+    font-size: large;
+}
+h3:hover{
+    color:white
+}
+
+h3{
+    transition: 0.5s ease-out;
+}
+.vvc  img:hover{
+    color: white;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(34,34,34);
+        
+}
+
+.header > *{
+    padding: 20px;
+}
+.right{
+    margin: 16px;
+    position: relative;
+
+}
+.spotify-playlists{
+    padding: 6px;
+}
+
+.spotify-playlists h1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 11px;
+
+    
+}
+ .card{
+    width: 170px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #252525;
+    position: relative;
+    transition: all .9s;
+}
+
+.card img{
+    width: 100%;
+    object-fit:contain;
+    border-radius: 7px ;
+    
+    
+}
+.card >*{
+    padding-top: 10px;
+}
+.cardContainer{
+    display: flex;
+    gap:10px;
+    flex-wrap:wrap;
+    padding-top: 17px;
+    overflow-y: scroll;
+    max-height: 60vh;
+    padding: 32px;
+    
+   
+   
+}
+
+.play{
+    width: 29px;
+    height: 28px;
+    background-color: #1fdf64;
+    border-radius: 50%;
+
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:122px;
+    right: 17px;
+    opacity: var(--a);
+    transition: all 1s ease-out;
+
+
+}
+.card:hover{
+    background-color: rgb(105, 103, 103);
+    cursor: pointer;
+    --a:1;
+
+
+}
+
+.card p{
+    color:rgb(189, 183, 183);
+}
+
+
+
+
+
+.buttons>* {
+    margin: 0 12px;
+}
+
+.signupbtn {
+    background-color: rgb(34 34 34);
+    color: rgb(156, 148, 148);
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.2s ease-out;
+}
+
+.signupbtn:hover {
+    font-size: 17px;
+    color: white
+}
+
+.loginbtn {
+    background-color: white;
+    border-radius: 21px;
+    color: black;
+    padding: 10px;
+    width: 89px;
+    cursor: pointer;
+    font-size: 16px;
+    border-color: white;
+    font-weight:bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    border-style: none;
+    transition: 1s ease-out;
+}
+
+.loginbtn:hover {
+
+    
+    
+    background-color: rgba(194, 183, 183, 0.682);
+}
+
+
+
+.playbar{
+    position: absolute;
+    bottom: 0;
+    background-color: #e2d9d9;
+  
+    padding: 12px;
+    filter:invert(1);
+    height:40px;
+    border-radius: 10px;
+    padding: 17px;
+    width: 92%;
+    margin-bottom: 1%;
+    height: 4;
+
+
+}
+
+.songbuttons{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    
+}
+
+.songList ul{
+    padding: px 0px;
+    width: 100%;
+    padding-top: 6%;
+
+  
+}
+
+.songList ul li {
+
+    list-style-type: decimal;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    
+    gap: 12px;
+    cursor: pointer;
+    border: 1px solid grey;
+    margin-right: 1%;
+    padding: 5px 8px;
+    border-radius: 8px;
+    margin: 15px;
+    padding:px
+
+
+}
+
+.playnow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.playnow span{
+    font-size: 15px;
+    width:64px;
+    padding: 12px;
+}
+.songList{
+    height: 434px;
+    overflow: auto;
+    margin: 44px 0;
+}
+
+.seekbar{
+    height: 4px;
+    width: 98%;
+    background-color: black;
+
+    position: absolute;
+    bottom: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    
+
+}
+.circle{
+    width: 10px;
+    height: 13px;
+    border-radius: 13px;
+    background-color: black;
+    position: relative;
+    bottom: 6px;
+    left: 0%;
+    transition: left 0.5s;
+
+
+}
+
+.songbuttons img{
+    cursor: pointer;
+    min-width: 12%;
+    
+    
+}
+
+.abovebar{
+
+    display: flex;
+    justify-content: space-between;
+   
+ }
+
+ .songinfo, .songtime{
+    color: black;
+    
+    
+ }
+ .songinfo{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 300px;
+    
+ }
+ 
+    
+    
+
+ .volume img{
+    cursor: pointer;
+    
+   
+
+ }
+
+ .timevol{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 12px;
+ }
+ .songtime{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+ }
